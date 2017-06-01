@@ -1,0 +1,92 @@
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+}
+
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+    width: 150px;
+    height: 46px;
+    margin-top: 6px;
+    padding-top: 12px;
+}
+
+ .text {
+    margin-left: 25%;
+    margin-top: 12px;
+}
+
+.logo {
+    margin-right: 25px;
+    padding-top: 5px;
+}
+
+.table-sortable {
+    position: relative;
+}
+.table-sortable .sortable-placeholder {
+    height: 37px;
+}
+.table-sortable .sortable-placeholder:after {
+    position: absolute;
+    z-index: 10;
+    content: " ";
+    height: 37px;
+    background: #f9f9f9;
+    left: 0;
+    right: 0;
+}
+
+.first-badge {
+    margin-left: 60%;
+    background-color: #1e90ff;
+}
+
+.second-badge {
+    margin-left: 60%;
+    background-color: #228b22;
+}
+
+.third-badge {
+    margin-left: 60%;
+    background-color: #32cd32;
+}
+
+.first-cap {
+    background-color: #ccc;
+    height: 50px;
+}
+
+.others-cap {
+    background-color: #f8f8ff;
+}
+
+.thumbnail {
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+    color: #333;
+    border: 1px solid #ccc;
+}
