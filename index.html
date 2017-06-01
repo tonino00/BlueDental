@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blue Dental</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="src/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="src/assets/css/sidermenu.css" rel="stylesheet">
+    <link href="src/assets/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <img src="src/img/logo_.png" alt="">
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 01</a>
+                </li>
+                <li>
+                    <a href="componnents/atividade2.html"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 02</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 03</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>      
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Especialidades</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav text">
+                    <h4>Terça-feira, 30 de Maio de 2017</h4>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><img class="logo" src="src/img/logo_.png" alt="" width="120" height="50"></li>
+                    <li class="active"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Ajuda</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        <!-- /#page-content-wrapper -->
+
+      <div class="container">
+        <div class="content">
+          <section>
+              <h4>Dr Gustavo Araujo</h4>
+                <h5>Dentista</h5>
+              <div class="row ">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail body-tumb">
+                        <div class="caption first-cap">
+                            <h4>Agendado <span class="badge first-badge">44</span></h3>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                              <h4>Joan Montgomery</h4>
+                              <b>08:00 - 08:30</b> 
+                            </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                                <h4>Tereza James</h4>
+                                <b>08:00 - 08:30</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption first-cap">
+                            <h4>Confirmado <span class="badge second-badge">44</span></h4>
+                        </div>
+                        <div class="thumbnail-sortable">
+                          <div class="caption others-cap">
+                            <h4>Joan Montgomery</h4>
+                            <b>08:00 - 08:30</b> 
+                          </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                                <h4>Tereza James</h4>
+                                <b>08:00 - 08:30</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption first-cap">
+                            <h4>Presente <span class="badge third-badge">44</span></h4>                  
+                        </div>
+                        <div class="thumbnail-sortable">
+                          <div class="caption others-cap">
+                              <h4>Tereza James</h4>
+                              <b>08:00 - 08:30</b>
+                          </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                          <div class="caption others-cap">
+                              <h4>Tereza James</h4>
+                              <b>08:00 - 08:30</b>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </section>
+        </div>
+      </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="src/lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="src/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Drop Drag'n -->
+     <script src="src/assets/js/jquery.sortable.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+      <script>
+        $(function() {
+                $('.thumbnail-sortable').sortable({
+                    placeholderClass: 'col-sm-6 col-md-4'
+                });
+                $('.table-sortable tbody').sortable({
+                    handle: 'span'
+                });
+                $('.list-group-sortable').sortable({
+                    placeholderClass: 'list-group-item'
+                });
+                $('.list-group-sortable-exclude').sortable({
+                    placeholderClass: 'list-group-item',
+                    items: ':not(.disabled)'
+                });
+                $('.list-group-sortable-handles').sortable({
+                    placeholderClass: 'list-group-item',
+                    handle: 'span'
+                });
+                $('.list-group-sortable-connected').sortable({
+                    placeholderClass: 'list-group-item',
+                    connectWith: '.connected'
+                });
+        });
+      </script>
+
+</body>
+
+</html>
