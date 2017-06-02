@@ -17,7 +17,6 @@
     <!-- Custom CSS -->
     <link href="../src/assets/css/sidermenu.css" rel="stylesheet">
     <link href="../src/assets/css/style.css" rel="stylesheet">
-    <link href="../src/assets/css/croppic.css" rel="stylesheet">
 
 
 
@@ -34,10 +33,10 @@
                     <img src="../src/img/logo_.png" alt="">
                 </li>
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 01</a>
+                    <a href="../index.html"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 01</a>
                 </li>
                 <li>
-                    <a href="componnents/atividade2.html"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 02</a>
+                    <a href="atividade2.html"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 02</a>
                 </li>
                 <li>
                     <a href="#"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Atividade 03</a>
@@ -75,31 +74,72 @@
               </div><!-- /.container-fluid -->
             </nav>
         <!-- /#page-content-wrapper -->
-      <br><br>
+
       <div class="container">
         <div class="content">
-          <div class="col-md-6 col-md-offset-3">
-            <div class="panel panel-default">
-              <div class="panel-heading"><h4 class="text-center">Cadastro</h4></div>
-              <div class="panel-body">
-                <form class="form">
-                  <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" class="form-control" required autofocus>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="name" class="form-control" required autofocus>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputFile">Enviar Foto</label>
-                    <input type="file" id="exampleInputFile">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+          <section>
+              <h4>Dr Gustavo Araujo</h4>
+                <h5>Dentista</h5>
+              <div class="row ">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail body-tumb">
+                        <div class="caption first-cap">
+                            <h4>Agendado <span class="badge first-badge">44</span></h3>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                              <h4>Joan Montgomery</h4>
+                              <b>08:00 - 08:30</b> 
+                            </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                                <h4>Tereza James</h4>
+                                <b>08:00 - 08:30</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption first-cap">
+                            <h4>Confirmado <span class="badge second-badge">44</span></h4>
+                        </div>
+                        <div class="thumbnail-sortable">
+                          <div class="caption others-cap">
+                            <h4>Joan Montgomery</h4>
+                            <b>08:00 - 08:30</b> 
+                          </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                                <h4>Tereza James</h4>
+                                <b>08:00 - 08:30</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption first-cap">
+                            <h4>Presente <span class="badge third-badge">44</span></h4>                  
+                        </div>
+                        <div class="thumbnail-sortable">
+                          <div class="caption others-cap">
+                              <h4>Tereza James</h4>
+                              <b>08:00 - 08:30</b>
+                          </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                          <div class="caption others-cap">
+                              <h4>Joan Montgomery</h4>
+                              <b>08:00 - 08:30</b>
+                          </div>
+                        </div>
+                    </div>
+                </div>
               </div>
-            </div>
-           </div> 
+          </section>
         </div>
       </div>
 
@@ -113,7 +153,7 @@
     <script src="../src/lib/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Drop Drag'n -->
-     <script src="../src/assets/js/croppic.min.js"></script>
+     <script src="../src/assets/js/jquery.sortable.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
@@ -122,7 +162,31 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
-
+      <script>
+        $(function() {
+                $('.thumbnail-sortable').sortable({
+                    placeholderClass: 'col-sm-6 col-md-4'
+                });
+                $('.table-sortable tbody').sortable({
+                    handle: 'span'
+                });
+                $('.list-group-sortable').sortable({
+                    placeholderClass: 'list-group-item'
+                });
+                $('.list-group-sortable-exclude').sortable({
+                    placeholderClass: 'list-group-item',
+                    items: ':not(.disabled)'
+                });
+                $('.list-group-sortable-handles').sortable({
+                    placeholderClass: 'list-group-item',
+                    handle: 'span'
+                });
+                $('.list-group-sortable-connected').sortable({
+                    placeholderClass: 'list-group-item',
+                    connectWith: '.connected'
+                });
+        });
+      </script>
 
 </body>
 
