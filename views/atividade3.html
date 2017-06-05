@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="registerPacientes">
+<html nng-app="app">
 
 <head>
 
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Antonino C.gama">
 
     <title>Blue Dental</title>
 
@@ -22,7 +22,7 @@
 
 </head>
 
-<body ng-controller="mainController">
+<body>
 
     <div id="wrapper">
 
@@ -84,12 +84,12 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail body-tumb">
                         <div class="caption first-cap">
-                            <h4>Agendado <span class="badge first-badge">{{register.status}}</span></h3>
+                            <h4>Agendado <span class="badge first-badge">04</span></h3>
                         </div>
                         <div class="thumbnail-sortable">
                             <div class="caption others-cap">
-                              <h4>{{name}}</h4>
-                              <b>{{horario}}</b> 
+                              <h4>Joan Montgomery</h4>
+                              <b>08:00 - 08:30</b> 
                             </div>
                         </div>
                         <div class="thumbnail-sortable">
@@ -98,12 +98,18 @@
                                 <b>08:00 - 08:30</b>
                             </div>
                         </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                                <h4>Karen May</h4>
+                                <b>08:00 - 08:30</b>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
                         <div class="caption first-cap">
-                            <h4>Confirmado <span class="badge second-badge">44</span></h4>
+                            <h4>Confirmado <span class="badge second-badge">07</span></h4>
                         </div>
                         <div class="thumbnail-sortable">
                           <div class="caption others-cap">
@@ -114,6 +120,18 @@
                         <div class="thumbnail-sortable">
                             <div class="caption others-cap">
                                 <h4>Tereza James</h4>
+                                <b>08:00 - 08:30</b>
+                            </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                                <h4>Suzan Ward</h4>
+                                <b>08:00 - 08:30</b>
+                            </div>
+                        </div>
+                        <div class="thumbnail-sortable">
+                            <div class="caption others-cap">
+                                <h4>Karen May</h4>
                                 <b>08:00 - 08:30</b>
                             </div>
                         </div>
@@ -154,12 +172,14 @@
 
     <!-- Drop Drag'n -->
      <script src="../src/assets/js/jquery.sortable.js"></script>
-      <!-- Angular -->
-      <script src="../src/lib/angular/angular.min.js"></script>
 
-     <!-- Api -->
+     <!-- Angular -->
 
-     <script src="../controllers/api.js"></script>
+     <script src="../src/lib/angular/angular.min.js"></script>
+
+     <!-- MocApi -->
+
+     <script src="../services/mocApi.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
